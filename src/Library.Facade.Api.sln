@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Facade.Core", "Library.Facade.Core\Library.Facade.Core.csproj", "{A0DB7530-BE40-40EA-AF37-C40E04298667}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Facade.Infrastructure", "Library.Facade.Infrastructure\Library.Facade.Infrastructure.csproj", "{430615B5-5712-490C-AA6F-F285E5F633E4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0DB7530-BE40-40EA-AF37-C40E04298667} = {A0DB7530-BE40-40EA-AF37-C40E04298667}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Facade.Configuration", "Library.Facade.Configuration\Library.Facade.Configuration.csproj", "{BA5A11B9-96F3-4BA7-99CA-29C51E61736F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0DB7530-BE40-40EA-AF37-C40E04298667} = {A0DB7530-BE40-40EA-AF37-C40E04298667}
+		{430615B5-5712-490C-AA6F-F285E5F633E4} = {430615B5-5712-490C-AA6F-F285E5F633E4}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Facada.ServiceHost", "Library.Facada.ServiceHost\Library.Facada.ServiceHost.csproj", "{D1384ACF-9920-4FD0-A78A-1E1857BE6B10}"
+	ProjectSection(ProjectDependencies) = postProject
+		{A0DB7530-BE40-40EA-AF37-C40E04298667} = {A0DB7530-BE40-40EA-AF37-C40E04298667}
+		{430615B5-5712-490C-AA6F-F285E5F633E4} = {430615B5-5712-490C-AA6F-F285E5F633E4}
+		{BA5A11B9-96F3-4BA7-99CA-29C51E61736F} = {BA5A11B9-96F3-4BA7-99CA-29C51E61736F}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Library.Facade.Infrastructure.Tests", "Library.Facade.Infrastructure.Tests\Library.Facade.Infrastructure.Tests.csproj", "{C0BA0128-CE18-47D9-86D3-7C63FD69BEED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0DB7530-BE40-40EA-AF37-C40E04298667}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0DB7530-BE40-40EA-AF37-C40E04298667}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0DB7530-BE40-40EA-AF37-C40E04298667}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0DB7530-BE40-40EA-AF37-C40E04298667}.Release|Any CPU.Build.0 = Release|Any CPU
+		{430615B5-5712-490C-AA6F-F285E5F633E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{430615B5-5712-490C-AA6F-F285E5F633E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{430615B5-5712-490C-AA6F-F285E5F633E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{430615B5-5712-490C-AA6F-F285E5F633E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA5A11B9-96F3-4BA7-99CA-29C51E61736F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA5A11B9-96F3-4BA7-99CA-29C51E61736F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA5A11B9-96F3-4BA7-99CA-29C51E61736F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA5A11B9-96F3-4BA7-99CA-29C51E61736F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1384ACF-9920-4FD0-A78A-1E1857BE6B10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1384ACF-9920-4FD0-A78A-1E1857BE6B10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1384ACF-9920-4FD0-A78A-1E1857BE6B10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1384ACF-9920-4FD0-A78A-1E1857BE6B10}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0BA0128-CE18-47D9-86D3-7C63FD69BEED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0BA0128-CE18-47D9-86D3-7C63FD69BEED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0BA0128-CE18-47D9-86D3-7C63FD69BEED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0BA0128-CE18-47D9-86D3-7C63FD69BEED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
